@@ -5,7 +5,8 @@
     "require": {
         "guzzlehttp/guzzle": "^7.9",
         "php": ">=8.0",
-        "illuminate/support": "^10.0|^11.0"
+        "illuminate/support": "^10.0|^11.0",
+        "roots/acorn": "^3.0|^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -14,6 +15,11 @@
     },
     "extra": {
         "laravel": {
+            "providers": [
+                "Datlx\\Ghtk\\GHTKServiceProvider"
+            ]
+        },
+        "acorn": {
             "providers": [
                 "Datlx\\Ghtk\\GHTKServiceProvider"
             ]
